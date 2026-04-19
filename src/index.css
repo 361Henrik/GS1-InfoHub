@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-nordic-bg: #F7F7F5;
+  --color-nordic-surface: #FFFFFF;
+  --color-nordic-border: #E6E5E0;
+  --color-nordic-text: #2A2D30;
+  --color-nordic-text-muted: #666A6D;
+  --color-nordic-blue: #324A5F;
+  --color-nordic-blue-light: #F0F3F5;
+  --color-nordic-accent: #C87963;
+  --color-nordic-accent-light: #FBF4F2;
+  --color-nordic-green: #6B8E7B;
+  --color-nordic-green-light: #F2F6F4;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, serif;
+}
+
+body { @apply bg-nordic-bg text-nordic-text font-sans antialiased; }
+h1, h2, h3, h4, h5, h6 { @apply text-nordic-blue; }
