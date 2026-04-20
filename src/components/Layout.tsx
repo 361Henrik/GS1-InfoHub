@@ -1,3 +1,5 @@
+import DemoBanner from './DemoBanner';
+
 interface Props {
   children: React.ReactNode;
 }
@@ -5,6 +7,7 @@ interface Props {
 export default function Layout({ children }: Props) {
   return (
     <div className="min-h-screen bg-nordic-bg font-sans">
+      <DemoBanner />
       <header className="bg-nordic-surface border-b border-nordic-border px-8 py-5 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <a href="#/" className="flex items-center gap-3">

@@ -20,7 +20,7 @@ export default function BriefSelector({ onSelect }: Props) {
       .select('id, created_at, topic, audience, channels, generated_brief, status')
       .eq('status', 'approved')
       .order('created_at', { ascending: false })
-      .then(({ data, error: err }) => {
+      .then(({ data, error: err }: { data: Brief[] | null; error: { message: string } | null }) => {
         if (err) setError(err.message);
         else setBriefs((data ?? []) as Brief[]);
         setLoading(false);

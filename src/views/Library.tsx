@@ -23,7 +23,7 @@ export default function Library() {
 
       if (runData) {
         setRuns(runData as Run[]);
-        const ids = runData.map(r => r.id);
+        const ids = runData.map((r: Run) => r.id);
         if (ids.length > 0) {
           const { data: srcData } = await supabase
             .schema('infohub')
